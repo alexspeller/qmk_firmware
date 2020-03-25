@@ -48,7 +48,8 @@ def check_avr_gcc_version():
     """
     if 'output' in ESSENTIAL_BINARIES['avr-gcc']:
         first_line = ESSENTIAL_BINARIES['avr-gcc']['output'].split('\n')[0]
-        version_number = first_line.split()[2]
+        version_number = first_line.split()[-1]
+
 
         major, minor, rest = version_number.split('.', 2)
         if int(major) > 8:

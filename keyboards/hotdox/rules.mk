@@ -33,5 +33,5 @@ MIDI_ENABLE             = no
 SRC =  matrix.c     \
 	   i2c_master.c \
        left.c
-
+COMBO_ENABLE = yes
 LAYOUTS = ergodox
